@@ -1,12 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title></title>
+	<style>
+
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: "Lucida Console", "Courier New", monospace;
+		}
+
+		#c1,
+		#c2,
+		#c3,
+		#c4,
+		#c5,
+		#c6 {
+			display: flex;
+			justify-content: center;
+		}
+
+		#c6 h1 {
+			margin: 5px 15px;
+			margin-bottom: 16px;
+			font-size: 15px;
+			background-color: #f7562e;
+			padding: 40px 50px;
+			border: 6px dotted blue;
+			border-radius: 38px;
+		}
+
+		#c5 h1 {
+			margin: 10px 60px;
+			background-color: rgb(209, 106, 195);
+			font-size: 15px;
+			text-align: center;
+			color: rgb(255, 0, 128);
+			padding: 40px 45px;
+			border: 5px outset #e949c1;
+			border-radius: 40px;
+		}
+
+		#c4 h1 {
+			margin: 10px 120px;
+			font-size: 20px;
+			text-align: center;
+			padding: 40px 50px;
+			color: rgb(17, 63, 25);
+			background-color: rgb(137, 231, 149);
+			border: 7px solid rgb(89, 119, 48);
+			border-radius: 38px;
+		}
+
+		#c3 .outer {
+			margin: 10px 185px;
+			color: rgb(219, 86, 24);
+			background-color: #ffa600;
+			padding: 45px 70px 15px;
+			border: 4px dashed black;
+			width: 90px;
+			border-radius: 38px;
+		}
+
+		.inner {
+			font-size: 15px;
+			color: rgb(25, 0, 255);
+			text-align: center;
+			background-color: #e75de0;
+			padding: 20px 20px;
+			border: 4px dotted rgb(0, 60, 128);
+			border-radius: 18px;
+		}
+
+		#c2 h2 {
+			margin: 10px 240px;
+			background-color: green;
+			padding: 40px 70px 40px 50px;
+			border-radius: 35px;
+			border: 10px inset rgb(153, 245, 77);
+			width: 40px;
+			color: #5db422;
+		}
+
+		#c1 h1 {
+			margin: 10px 305px;
+			background-color: blue;
+			padding: 40px 50px;
+			border-radius: 35px;
+			border: 4px solid #ca66ae;
+			color: #ff00b7;
+			
+		}
+
+		#triangle-down {
+			margin: auto;
+			width: 0 ;
+			align-self: center;
+			height: 0;
+			border-left: 150px solid transparent;
+			border-right: 150px solid transparent;
+			border-top: 100px solid rgba(85, 85, 85, 0.178);
+		}
+	</style>
+
 </head>
+
 <body>
-	
+	<div id="c1">
+		<h1>JAVA</h1>
+		<h1>JAVA</h1>
+	</div>
+
+	<div id="c2">
+		<h2>SQL</h2>
+		<h2>SQL</h2>
+	</div>
+
+	<div id="c3">
+		<div class="outer">
+			<h2>html</h2>
+			<div class="inner">
+				<h1>css</h1>
+			</div>
+		</div>
+
+		<div class="outer">
+			<h2>html</h2>
+			<div class="inner">
+				<h1>css</h1>
+			</div>
+		</div>
+	</div>
+
+	<div id="c4">
+		<h1>J2EE</h1>
+		<h1>J2EE</h1>
+	</div>
+	<div id="c5">
+		<h1>Hibernates</h1>
+		<h1>Hibernates</h1>
+	</div>
+
+	<div id="c6">
+		<h1>Servlets</h1>
+		<h1>Servlets</h1>
+	</div>
+	<div class="container">
+		<div id="triangle-down"></div>
+	</div>
 </body>
+
 </html>
