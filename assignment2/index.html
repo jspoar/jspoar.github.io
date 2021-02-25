@@ -5,89 +5,89 @@
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+
 		* {
 			padding: 0;
 			margin: 0;
 			font-family: "Lucida Console", "Courier New", monospace;
+			font-weight: bolder;
+			font-size: small;
+			text-align: center;
 		}
 
-		#c1,
-		#c2,
-		#c3,
-		#c4,
-		#c5,
-		#c6 {
+		#java,
+		#sql,
+		#html,
+		#j2ee,
+		#Hibernates,
+		#Servlets {
 			display: flex;
 			justify-content: center;
 		}
 
-		#c6 h1 {
+		#Servlets p {
 			margin: 5px 15px;
 			margin-bottom: 16px;
-			font-size: 15px;
 			background-color: #f7562e;
-			padding: 40px 50px;
+			padding: 25px 25px;
 			border: 6px dotted blue;
-			border-radius: 38px;
+			border-radius: 25px;
 		}
 
-		#c5 h1 {
+		#Hibernates p {
 			margin: 10px 60px;
 			background-color: rgb(209, 106, 195);
-			font-size: 15px;
 			text-align: center;
 			color: rgb(255, 0, 128);
-			padding: 40px 45px;
+			padding: 25px 25px;
 			border: 5px outset #e949c1;
-			border-radius: 40px;
+			border-radius: 25px;
 		}
 
-		#c4 h1 {
+		#j2ee p {
 			margin: 10px 120px;
-			font-size: 20px;
 			text-align: center;
-			padding: 40px 50px;
+			padding: 20px 25px;
 			color: rgb(17, 63, 25);
 			background-color: rgb(137, 231, 149);
 			border: 7px solid rgb(89, 119, 48);
-			border-radius: 38px;
+			border-radius: 30px;
 		}
 
-		#c3 .outer {
+		#html .outer {
 			margin: 10px 185px;
 			color: rgb(219, 86, 24);
 			background-color: #ffa600;
-			padding: 45px 70px 15px;
+			padding: 30px 50px 15px;
 			border: 4px dashed black;
 			width: 90px;
 			border-radius: 38px;
 		}
 
 		.inner {
-			font-size: 15px;
 			color: rgb(25, 0, 255);
 			text-align: center;
 			background-color: #e75de0;
-			padding: 20px 20px;
+			padding: 10px 10px;
 			border: 4px dotted rgb(0, 60, 128);
 			border-radius: 18px;
 		}
 
-		#c2 h2 {
+		#sql p {
 			margin: 10px 240px;
 			background-color: green;
-			padding: 40px 70px 40px 50px;
-			border-radius: 35px;
+			padding: 15px 20px;
+			border-radius: 25px;
 			border: 10px inset rgb(153, 245, 77);
 			width: 40px;
 			color: #5db422;
 		}
 
-		#c1 h1 {
-			margin: 10px 305px;
+		#java p {
+			margin: 10px 300px;
 			background-color: blue;
-			padding: 40px 50px;
-			border-radius: 35px;
+			padding: 20px 30px;
+			border-radius: 25px;
 			border: 4px solid #ca66ae;
 			color: #ff00b7;
 
@@ -98,9 +98,17 @@
 			width: 0;
 			align-self: center;
 			height: 0;
-			border-left: 150px solid transparent;
-			border-right: 150px solid transparent;
-			border-top: 100px solid rgba(85, 85, 85, 0.178);
+			border-left: 100px solid transparent;
+			border-right: 100px solid transparent;
+			border-top: 60px solid rgba(85, 85, 85, 0.178);
+		}
+
+		.vertical-center {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
 		}
 	</style>
 
@@ -108,44 +116,44 @@
 
 <body>
 	<div class="vertical-center">
-		<div id="c1">
-			<h1>JAVA</h1>
-			<h1>JAVA</h1>
+		<div id="java">
+			<p>JAVA</p>
+			<p>JAVA</p>
 		</div>
 
-		<div id="c2">
-			<h2>SQL</h2>
-			<h2>SQL</h2>
+		<div id="sql">
+			<p>SQL</p>
+			<p>SQL</p>
 		</div>
 
-		<div id="c3">
+		<div id="html">
 			<div class="outer">
-				<h2>html</h2>
+				<p>html</p>
 				<div class="inner">
-					<h1>css</h1>
+					<p>css</p>
 				</div>
 			</div>
 
 			<div class="outer">
-				<h2>html</h2>
+				<p>html</p>
 				<div class="inner">
-					<h1>css</h1>
+					<p>css</p>
 				</div>
 			</div>
 		</div>
 
-		<div id="c4">
-			<h1>J2EE</h1>
-			<h1>J2EE</h1>
+		<div id="j2ee">
+			<p>J2EE</p>
+			<p>J2EE</p>
 		</div>
-		<div id="c5">
-			<h1>Hibernates</h1>
-			<h1>Hibernates</h1>
+		<div id="Hibernates">
+			<p>Hibernates</p>
+			<p>Hibernates</p>
 		</div>
 
-		<div id="c6">
-			<h1>Servlets</h1>
-			<h1>Servlets</h1>
+		<div id="Servlets">
+			<p>Servlets</p>
+			<p>Servlets</p>
 		</div>
 		<div class="container">
 			<div id="triangle-down"></div>
