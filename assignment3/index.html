@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            background: url('wall.jpeg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .header-div {
+            text-align: center;
+            font-size: xx-large;
+            text-transform: capitalize;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        th {
+            text-align: center;
+        }
+        
+        input[type="date"] {
+            color: black;
+        }
+        
+        input[type="submit"] {
+            border-radius: 0 10px;
+            padding: 10px 30px;
+            background: linear-gradient(35deg, rgb(73, 24, 24), rgb(187, 56, 56));
+            color: white;
+            font-size: large;
+        }
+        
+        .btns {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+        
+        #lk label,
+        #hobs label {
+            padding-right: 40px;
+        }
+        
+        fieldset {
+            background-color: #0000006c;
+            border: 2px solid white;
+            border-radius: 0 15px;
+            margin: 30px;
+        }
+        
+        legend {
+            background-color: #000000;
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+            border: 2px solid white;
+            border-radius: 0 8px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-div">
+        online job applicaion form
+    </div>
+    <div class="main-content">
+        <form action="" autocomplete="off">
+            <fieldset>
+                <legend>personal details</legend>
+                <table>
+                    <tr>
+                        <td><label for="">FirstName</label></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><label for="">MiddleName</label></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><label for="">LastName</label></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Father's Name</label></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><label for="">Mother's Name</label></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Current Address</label></td>
+                        <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
+                        <td><label for="">Permanent Addres</label></td>
+                        <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">LandLine Number</label></td>
+                        <td><input type="text"></td>
+                        <td><label for="">Mobile Number</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Date Of Birth</label></td>
+                        <td>
+                            <input type="date" data-date-format="DD MM YYYY">
+                        </td>
+                        <td><label for=" ">Place Of Birth</label></td>
+                        <td><input type="text "></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Gender</label></td>
+                        <td>
+                            <input type="radio" name="gender" id="">
+                            <label for="">male</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="">
+                            <label for="">female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Highest Qualification</label></td>
+                        <td><input type="text"></td>
+                        <td><label for="">Year Of Passing</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Languages Known</label>
+                        </td>
+                        <td id="lk" colspan="3">
+                            <input type="checkbox" name="" id="" value="">
+                            <label for="">English</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Telugu</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">English</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Hobbies</label>
+                        </td>
+                        <td id="hobs" colspan="3">
+                            <input type="checkbox" name="" id="" value="">
+                            <label for="">English</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Telugu</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">English</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">About Yourself</label></td>
+                        <td>
+                            <textarea name="" id="" cols="20" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Nationality</label></td>
+                        <td>
+                            <select name="cars" id="cars">
+                                <option value="">indian</option>
+                                <option value="">others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Adhaar card</label></td>
+                        <td><input type="text"></td>
+                        <td><label for="">PAN card</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Eduation details</legend>
+                <table>
+                    <tr>
+                        <th>sno.</th>
+                        <th>Qualification</th>
+                        <th>Institute/University</th>
+                        <th>Year of Passing</th>
+                        <th>Marks(%)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>WorkExperience</legend>
+                <table>
+                    <tr>
+                        <th>sno.</th>
+                        <th>Company</th>
+                        <th>Work/Role</th>
+                        <th>From</th>
+                        <th>To</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                        <td><input type="date" data-date-format="DD MM YYYY"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Other Detatils</legend>
+                <table>
+                    <tr>
+                        <td><label for="">Job Type</label></td>
+                        <td>
+                            <input type="radio" name="jobtype" id="">
+                            <label for="">Permanent</label>
+                        </td>
+                        <td><input type="radio" name="jobtype">
+                            <label for="">Contract</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="jobtype" id="">
+                            <label for="">Others</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Date Of Joining</label></td>
+                        <td>
+                            <input type="date" data-date-format="DD MM YYYY">
+                        </td>
+                        <td><label for="">Time Of Joining</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="">Preffered Job Location</label></td>
+                        <td>
+                            <input type="radio" name="jobloc" id="">
+                            <label for="">Banglore</label>
+                        </td>
+                        <td><input type="radio" name="jobloc">
+                            <label for="">Hyderabad</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="jobloc" id="">
+                            <label for="">Others</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Willing To Relocate?</label></td>
+                        <td><input type="radio" name="willingToRelocate" id=""><label for="willingToRelocate">YES</label></td>
+                        <td><input type="radio" name="willingToRelocate" id=""><label for="willingToRelocate">NO</label></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Iam here declaring that all the above mentioned information is true as per my knowledge</label>
+                        </td>
+                    </tr>
+                </table>
+                <div class="btns">
+                    <input type="submit" value="submit">
+                    <input type="submit" value="reset">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+<!--
+    > remove input field decoration i.e when click remove border
+    > make date fields in two sections
+-->
