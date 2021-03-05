@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: center;
+            font-family: arial;
+            background-color: blue;
+            border-radius: 10px;
+        }
+        
+        .card input,
+        select {
+            background: none;
+            outline: none;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            border-bottom: 2px solid white;
+        }
+        
+         ::placeholder {
+            color: white;
+        }
+        
+        input[type='submit'],
+        select {
+            width: 186px;
+            color: white;
+        }
+        
+        input[type='submit'] {
+            margin-top: 30px;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+        
+        .fa {
+            /* position: relative; */
+            margin-top: -50%;
+            color: white;
+            background-color: blue;
+            font-size: 90px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px blue;
+        }
+        
+        option {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <span class="fa fa-user-circle"></span>
+        <input type="text" placeholder="enter username"><br>
+        <input type="text" placeholder="enter email"><br>
+        <input type="text" placeholder="enter password"><br>
+        <input type="text" placeholder="enter confirm password"><br>
+
+        <select id="select">
+            <option value="null">select one option</option>
+            <option value="1" >one</option>
+            <option value="2" >two</option>
+        </select> <br>
+        <input type="submit" value="submit">
+    </div>
+
+</body>
+
+</html>

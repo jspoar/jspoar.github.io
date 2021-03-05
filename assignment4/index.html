@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS FANCY LOGIN FORM</title>
+    <script src="https://kit.fontawesome.com/8132129e33.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="fontawesome/css/all.css"> -->
+    <style>
+        body {
+            background-image: url('https://i.ytimg.com/vi/d1FZGpv2-Q4/maxresdefault.jpg');
+            background-size: cover;
+        }
+        
+        #main-block {
+            background: linear-gradient(45deg, orange, blue, green);
+            padding: 20px;
+            width: 200px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px blue;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin: 20px;
+        }
+        
+        .form-group input[type='text'],
+        .form-group input[type='password'],
+        select {
+            width: 170px;
+            border: none;
+            outline: none;
+            background: none;
+            color: white;
+            font-size: 15px;
+            border-bottom: 2px solid white;
+        }
+        
+        .form-group select {
+            width: 173px;
+        }
+        
+         ::placeholder {
+            color: white;
+        }
+        
+        input[type='submit'] {
+            width: 173px;
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background: linear-gradient(135deg, orange, green, red);
+            color: white;
+        }
+        
+        input[type='submit']:hover {
+            box-shadow: 0 0 10px white;
+        }
+        
+        #icon {
+            margin-top: -49px;
+        }
+        
+        .fa {
+            color: white;
+            background-color: blue;
+            font-size: 70px;
+            border-radius: 50%;
+            border: 10px solid blue;
+            box-shadow: 0 0 10px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-block">
+        <div id="icon">
+            <!-- <span class="fa fa-user-circle"></span> -->
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Enter UserName">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Enter Confirm Password">
+            </div>
+            <div class="form-group">
+                <select>
+<option>Select Designation</option>
+<option>Team Lead</option>
+<option>Manager</option>
+<option>Sr.Software</option>
+</select>
+            </div>
+            <div class="form-group">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
