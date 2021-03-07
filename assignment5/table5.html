@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="base.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 30px;
+        }
+        
+        table {
+            border-left: 2px solid gray;
+            border-top: 2px solid gray;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        
+        td {
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+            padding: 4px;
+        }
+        
+        table table td {
+            padding: 10px;
+        }
+        
+        #rn,
+        #fs {
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        #fs {
+            text-align: start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <p>This is a paragraph ablout me, Ian!</p>
+                    <p>This is anotehr paragraph about me, Ian!</p>
+                </td>
+                <td>
+                    <table>
+                        <p id="rn">Random Names</p>
+                        <!-- <tr>
+                        <th colspan="2"> Random Names</th>
+                    </tr> -->
+                        <tr>
+                            <td>J.Doe</td>
+                            <td>P.Day</td>
+                        </tr>
+                        <tr>
+                            <td>R.Bob</td>
+                            <td>T.Sam</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Contact me for details
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="fs">Free software</p>
+                    <ol>
+                        <li>Linux</li>
+                        <li>Apache</li>
+                        <li>MySQL</li>
+                        <li>PHP</li>
+                    </ol>
+                </td>
+                <td>HELLO</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

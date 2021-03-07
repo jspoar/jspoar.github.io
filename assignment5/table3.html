@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <title>Document</title>
+    <style>
+         :root {
+            --lightyellow: #ffffcc;
+            --lightgreen: #ccffcc;
+            --lightblue: #ccccff;
+        }
+        
+        * {
+            font-size: 30px;
+        }
+        
+        .morning {
+            background-color: var(--lightyellow);
+        }
+        
+        .afternoon {
+            background-color: var(--lightgreen);
+        }
+        
+        .eveining {
+            background-color: var(--lightblue);
+        }
+        
+        table {
+            border-left: 1px solid gray;
+            border-top: 1px solid gray;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        
+        th,
+        td {
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 7px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="container">
+
+    <table>
+        <tr>
+            <th rowspan="3">DAY</th>
+            <th colspan="3">SEMINAR</th>
+        </tr>
+        <tr>
+            <th colspan="2">SHEDULE</th>
+            <th rowspan="2">TOPIC</th>
+        </tr>
+        <tr>
+            <th>BEGIN</th>
+            <th>END</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2" class="morning">8:00 am</td>
+            <td rowspan="2" class="eveining">5:00 pm</td>
+            <td>Introduction to xml</td>
+        </tr>
+        <tr>
+            <td>Validaty: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Tuesday</td>
+            <td rowspan="2" class="morning">8:00 am</td>
+            <td rowspan="2" class="morning">11:00 am</td>
+            <td rowspan="3">XPath</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="2" class="morning">11:00 am</td>
+            <td rowspan="2" class="afternoon">2:00 pm</td>
+        </tr>
+        <tr>
+            <td rowspan="2">XSL transformations</td>
+        </tr>
+        <tr>
+            <td class="afternoon">2:00 pm</td>
+            <td class="eveining">5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Wensday</td>
+            <td class="morning">8:00 am</td>
+            <td class="afternoon">12:00 pm</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+</div>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="base.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 25px;
+        }
+        
+        .big-border {
+            border-left: 10px solid gray;
+            border-top: 10px solid gray;
+            border-right: 10px solid black;
+            border-bottom: 10px solid black;
+        }
+        
+        table tr td {
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+            padding: 4px;
+        }
+        
+        #inner-table {
+            width: 700px;
+        }
+        
+        #mini-tabel tr td {
+            border: none;
+        }
+        
+        ul {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class=big-border>
+            <tr>
+                <td>
+                    <p>This is a paragraph</p>
+                    <p>This is another paragraph </p>
+                </td>
+                <td>
+                    <table id="inner-table" class="big-border">
+                        This cell conntains a table:
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>D</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>This cell contains list</p>
+                    <ul>
+                        <li>apples</li>
+                        <li>bananas</li>
+                        <li>pineapples</li>
+                    </ul>
+                </td>
+                <td>
+                    <table id="mini-tabel">
+                        <tr>
+                            <td>
+                                <p>This is a paragraph</p>
+                                <p>This is another paragraph </p>
+                            </td>
+                            <td>
+                                <table id="inner-inner-table1">
+                                    This cell conntains a table:
+                                    <tr>
+                                        <td>A</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C</td>
+                                        <td>D</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>This cell contains list</p>
+                                <ul>
+                                    <li>apples</li>
+                                    <li>bananas</li>
+                                    <li>pineapples</li>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
